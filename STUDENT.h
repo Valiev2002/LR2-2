@@ -2,16 +2,14 @@
 #include<iostream>
 #include<string>
 class Student {
-private:
+protected:
     std::string name;
     double karma;
     double plan;
 public:
-    void probability();
-    void print();
-    Student(std::string new_name, double new_karma, double new_plan);
+     double probability(double karma, double plan);
 
-    Student();
+    virtual void print();
+   Student(std::string new_name, double new_karma, double new_plan);
+   Student();
 };
-
-
