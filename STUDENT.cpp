@@ -9,10 +9,9 @@ Student::Student(std::string new_name, double new_karma, double new_plan) {
     karma=new_karma;
     plan=new_plan;
 }
-double Student::probability(double karma, double plan) {
+double Student::probability() const {
     return 1-karma-plan;
 }
 
-Student::Student() {
-
+Student::Student():name("Andrey Paketov"),karma(0.0),plan(0.0) {
 }

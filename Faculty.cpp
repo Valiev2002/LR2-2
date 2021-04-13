@@ -7,9 +7,7 @@ Faculty::Faculty(std::string new_name_of_faculty, double new_good_dekan) {
     name_of_faculty=new_name_of_faculty;
     good_dekan=new_good_dekan;
 }
-
-Faculty::Faculty() {
-
+Faculty::Faculty():name_of_faculty("Zaborostroy"),good_dekan(0.5) {
 }
 
 
